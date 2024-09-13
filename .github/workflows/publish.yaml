@@ -28,6 +28,9 @@ jobs:
         run: |
           npm set @gsmsdev:registry=https://npm.pkg.github.com/gsmsdev
           npm set "//npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}"
+
+      - name: Install Packages
+        run: npm install
       - name: "Version and publish"
         env:
           GH_TOKEN: ${{ secrets.G_TOKEN }}
@@ -41,7 +44,7 @@ jobs:
           if [ ${{ github.base_ref }} = development ]; then
             npm lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           else
-            npm lerna version --conventional-commits --conventional-graduate --yes
+            lerna version --conventional-commits --conventional-graduate --yes
           fi
           
-          npm lerna publish from-git --yes
+          lerna publish from-git --yes

@@ -1,0 +1,16 @@
+{
+  "name": "@gsmsdev/logger",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:ts",
+    "build:ts": "tsc -b .",
+    "test": "jest"
+  }
+}

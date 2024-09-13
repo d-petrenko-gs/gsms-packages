@@ -26,10 +26,10 @@ jobs:
       - name: "Setup npm"
         run: |
           npm set @gsms-dev:registry=https://npm.pkg.github.com/gsms-dev
-          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}"
       - name: "Version and publish"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.G_TOKEN }}
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"

@@ -3,7 +3,11 @@ export class GsmsLogger {
       console.info('Info', context);
     }
 
-  error(context: string) {
-    console.error('Error', context);
-  }
+    error(context: string) {
+      console.error('Error', context);
+    }
+
+    warning(context: string) {
+      console.warn('Warn', context);
+    }
 }

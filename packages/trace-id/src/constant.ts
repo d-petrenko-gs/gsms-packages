@@ -1,0 +1,2 @@
+export const NAMESPACE_TRACE_ID = 'GSMS_TRACE_ID';
+export const TRACE_ID_HEADER_KEY = 'X-TRACE-ID';

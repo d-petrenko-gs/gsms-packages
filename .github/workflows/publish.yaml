@@ -33,18 +33,31 @@ jobs:
 
       - name: Install Packages
         run: npm install
-      - name: "Version and publish"
+
+      - name: "Commit lockfile if changed"
+        # Only commit changes to package-lock.json if it was actually modified
+        run: |
+          if [ -n "$(git status package-lock.json --porcelain)" ]; then
+            git config user.name "${{ github.actor }}"
+            git config user.email "${{ github.actor }}@users.noreply.github.com"
+            git add package-lock.json
+            git commit -m "chore: update package-lock.json [skip ci]"
+          fi
+      - name: "Version"
         env:
           GH_TOKEN: ${{ secrets.G_TOKEN }}
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-        
           
           if [ ${{ github.base_ref }} = development ]; then
             npm lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           else
             lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           fi
-          
+      - name: "Publish"
+        env:
+          GH_TOKEN: ${{ secrets.G_TOKEN }}
+        run: |
+          # Publish from the newly created tags
           lerna publish from-git --yes

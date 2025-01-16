@@ -1,12 +1,12 @@
 {
-  "name": "@gsmsdev1/ts-config",
-  "version": "1.1.4",
+  "name": "@gsmsdev12/ts-config",
+  "version": "1.1.5",
   "license": "MIT",
   "private": false,
   "main": "tsconfig.base.json",
   "repository": "https://github.com/d-petrenko-gs/gsms-packages",
   "publishConfig": {
-    "@gsmsdev1:registry": "https://npm.pkg.github.com/gsmsdev1"
+    "@gsmsdev12:registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "tsconfig.base.json"
@@ -15,5 +15,6 @@
     "build": "echo 0",
     "build:ts": "tsc -b .",
     "test": "jest"
-  }
+  },
+  "gitHead": "9510d721e0676e2eb7a7666aaff73137d954fa94"
 }

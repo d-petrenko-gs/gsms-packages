@@ -1,13 +1,13 @@
 {
-  "name": "@gsmsdev1/logger",
-  "version": "1.1.4",
+  "name": "@gsmsdev12/logger",
+  "version": "1.1.5",
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "repository": "https://github.com/d-petrenko-gs/gsms-packages",
   "publishConfig": {
-    "@gsmsdev1:registry": "https://npm.pkg.github.com/gsmsdev1"
+    "@gsmsdev12:registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "dist"
@@ -16,5 +16,6 @@
     "build": "npm run build:ts",
     "build:ts": "tsc -b .",
     "test": "jest"
-  }
+  },
+  "gitHead": "9510d721e0676e2eb7a7666aaff73137d954fa94"
 }

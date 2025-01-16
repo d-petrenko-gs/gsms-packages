@@ -1,6 +1,6 @@
 {
   "name": "@gsmsdev12/ts-config",
-  "version": "1.1.13",
+  "version": "1.1.14-alpha.0",
   "license": "MIT",
   "private": false,
   "main": "tsconfig.base.json",

@@ -1,6 +1,6 @@
 {
   "name": "@gsmsdev1/logger",
-  "version": "1.0.1-beta.4",
+  "version": "1.0.1-beta.5",
   "license": "MIT",
   "private": true,
   "main": "dist/index.js",

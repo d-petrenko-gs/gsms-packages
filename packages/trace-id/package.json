@@ -1,6 +1,6 @@
 {
   "name": "@gsmsdev1/trace-id",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.1-beta.3",
   "license": "MIT",
   "private": true,
   "main": "dist/index.js",

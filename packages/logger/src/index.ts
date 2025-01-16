@@ -4,7 +4,7 @@ export class GsmsLogger {
   }
 
   error(context: string) {
-    console.error("Error", context);
+    console.error("Errors", context);
   }
 
   warning(context: string) {

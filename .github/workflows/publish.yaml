@@ -53,11 +53,11 @@ jobs:
           if [ ${{ github.base_ref }} = development ]; then
             npm lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           else
-            lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+            lerna version --conventional-commits --conventional-prerelease --preid --yes
           fi
       - name: "Publish"
         env:
           GH_TOKEN: ${{ secrets.G_TOKEN }}
         run: |
           # Publish from the newly created tags
-          lerna publish --no-private from-git --yes
+          lerna publish from-git --yes

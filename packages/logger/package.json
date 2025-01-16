@@ -17,5 +17,5 @@
     "build:ts": "tsc -b .",
     "test": "jest"
   },
-  "gitHead": "d26d1d1c5a73f0f033006c3af8d8c2e0bcc57f75"
+  "gitHead": "c54f5eb8afd502444f6c2d8f4b0e8d480bf245cb"
 }

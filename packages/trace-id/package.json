@@ -1,6 +1,6 @@
 {
   "name": "@gsmsdev12/trace-id",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
@@ -21,5 +21,5 @@
     "cls-hooked": "4.2.2",
     "express": "4.21.2"
   },
-  "gitHead": "b0d3e57b89c3c86f1844d082ae39b66f73fdb17e"
+  "gitHead": "b5ca558031e0910fb54e541bb22e05fe3d65e39a"
 }

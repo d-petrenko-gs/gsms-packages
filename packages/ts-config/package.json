@@ -2,7 +2,7 @@
   "name": "@gsmsdev1/ts-config",
   "version": "1.1.2",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "main": "tsconfig.base.json",
   "repository": "https://github.com/d-petrenko-gs/gsms-packages",
   "publishConfig": {

@@ -28,7 +28,7 @@ jobs:
 
       - name: "Setup npm"
         run: |
-          npm set @gsmsdev12:registry=https://npm.pkg.github.com/
+          npm set @gsmsdev12:registry=https://npm.pkg.github.com/gsmsdev12
           npm set "//npm.pkg.github.com/:_authToken=${{ secrets.G_TOKEN }}"
 
       - name: Install Packages

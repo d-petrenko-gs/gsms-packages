@@ -56,4 +56,4 @@ jobs:
           GH_TOKEN: ${{ secrets.G_TOKEN }}
         run: |
           # Publish from the newly created tags
-          lerna publish from-git --yes
+          lerna publish from-git --force-publish --yes

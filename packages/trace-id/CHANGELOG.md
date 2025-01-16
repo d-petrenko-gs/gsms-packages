@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.8-alpha.0](https://github.com/d-petrenko-gs/gsms-packages/compare/@gsmsdev12/trace-id@1.1.7...@gsmsdev12/trace-id@1.1.8-alpha.0) (2025-01-16)
+
+**Note:** Version bump only for package @gsmsdev12/trace-id
+
+
+
+
+
 ## [1.0.1-beta.4](https://github.com/d-petrenko-gs/gsms-packages/compare/@gsmsdev1/trace-id@1.0.1-beta.3...@gsmsdev1/trace-id@1.0.1-beta.4) (2025-01-16)
 
 **Note:** Version bump only for package @gsmsdev1/trace-id

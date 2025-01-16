@@ -1,6 +1,6 @@
 {
   "name": "@gsmsdev12/ts-config",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "license": "MIT",
   "private": false,
   "main": "tsconfig.base.json",
@@ -16,5 +16,5 @@
     "build:ts": "tsc -b .",
     "test": "jest"
   },
-  "gitHead": "d35c061dd6f8aeccccc52de44d5edc0d4ffa22b9"
+  "gitHead": "a0e7936d987b0e1f410f0b71e0a534ffe9695bbc"
 }

@@ -49,12 +49,8 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
-          
-          if [ ${{ github.base_ref }} = development ]; then
-            npm lerna version --conventional-commits --conventional-prerelease --preid beta --yes
-          else
-            lerna version --conventional-commits --conventional-prerelease --yes
-          fi
+
+          lerna version --conventional-commits --conventional-prerelease --yes
       - name: "Publish"
         env:
           GH_TOKEN: ${{ secrets.G_TOKEN }}

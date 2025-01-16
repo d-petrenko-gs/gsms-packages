@@ -1,6 +1,6 @@
 export class GsmsLogger {
   info(context: string) {
-    console.info("Info", context);
+    console.info("Infos", context);
   }
 
   error(context: string) {

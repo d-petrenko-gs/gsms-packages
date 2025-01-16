@@ -14,6 +14,7 @@ export function traceId(req: Request, res: Response, next: NextFunction): void {
   }
 
   const namespace = createTraceIdNameSpace();
+
   namespace.bind(req);
   namespace.bind(res);
 

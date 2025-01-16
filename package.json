@@ -13,7 +13,7 @@
     "build": "lerna run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "publish": "lerna publish --force-publish"
+    "publish": "lerna publish --force-publish --yes"
   },
   "dependencies": {
     "lerna": "^8.1.8"
